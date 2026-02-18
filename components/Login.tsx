@@ -26,7 +26,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, isLoading }) => {
       
       <form onSubmit={handleSubmit} className="w-full max-w-sm flex flex-col gap-4 bg-slate-900/50 p-6 rounded-lg border border-cyber-purple backdrop-blur-sm">
         <div className="flex flex-col text-left">
-          <label className="font-pixel text-xs mb-2 text-neon-green">AGENT NAME</label>
+          <label className="font-pixel text-xs mb-2 text-neon-green">NAMA PEMAIN</label>
           <input 
             type="text" 
             value={name}
@@ -38,7 +38,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, isLoading }) => {
         </div>
         
         <div className="flex flex-col text-left">
-          <label className="font-pixel text-xs mb-2 text-neon-pink">ID CODE (Last 4 Digits HP)</label>
+          <label className="font-pixel text-xs mb-2 text-neon-pink">PIN</label>
           <input 
             type="tel" 
             maxLength={4}
@@ -51,7 +51,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, isLoading }) => {
         </div>
 
         <Button type="submit" disabled={isLoading} className="mt-4">
-          {isLoading ? 'INITIALIZING...' : 'ENTER SYSTEM'}
+          {isLoading ? 'Sabar, dikit lagi...' : 'Main Sekarang'}
         </Button>
       </form>
     </div>

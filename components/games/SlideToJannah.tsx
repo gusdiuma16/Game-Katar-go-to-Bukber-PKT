@@ -212,7 +212,7 @@ const SlideToJannah: React.FC<SlideToJannahProps> = ({ onGameOver, onExit }) => 
       {gameState === 'READY' && (
         <div className="absolute z-20 text-center bg-slate-900/90 p-8 rounded border-2 border-neon-green shadow-[0_0_20px_#39ff14] backdrop-blur">
           <h2 className="text-2xl font-pixel text-neon-green mb-4">SLIDE TO JANNAH</h2>
-          <p className="font-cyber text-white mb-6 text-lg">Jump over "Ghibah" holes.<br/>Double tap for Double Jump!</p>
+          <p className="font-cyber text-white mb-6 text-lg">Melewati "Cobaan" dengan melompat.<br/>Double tap for Double Jump!</p>
           <div className="flex gap-4 justify-center">
             <Button onClick={startGame}>START RUN</Button>
             <Button variant="secondary" onClick={onExit}>EXIT</Button>

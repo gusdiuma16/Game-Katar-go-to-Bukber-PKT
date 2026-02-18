@@ -13,7 +13,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ user, onNavigate, onLogout }) => {
     <div className="flex flex-col items-center w-full max-w-2xl mx-auto p-4">
       <div className="w-full flex justify-between items-center mb-8 border-b-2 border-cyber-purple pb-4">
         <div>
-          <h2 className="text-xl font-cyber text-white">Welcome Agent,</h2>
+          <h2 className="text-xl font-cyber text-white">Selamat Datang,</h2>
           <span className="text-2xl font-pixel text-neon-green">{user.username}</span>
         </div>
         <button onClick={onLogout} className="text-red-500 text-xs font-pixel hover:underline">LOGOUT</button>
